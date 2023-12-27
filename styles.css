@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+body {
+  display: flex;
+  font: 16px/1.6 "Roboto Mono", monospace;
+  width: 100vw;
+  height: 100vh;
+  background-color: #27ae60;
+}
+
+.card-header-background,
+.card-body-background,
+.card-footer-background {
+  padding: 0.5em;
+  margin: 2em;
+  border-radius: 2em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 40em;
+  margin: auto;
+  background-color: #2c3e50;
+  border-radius: 1em;
+  box-shadow: 0px 16px 31px 2px rgba(0, 0, 0, 0.78);
+}
+
+.card-header-background {
+  background-color: #e74c3c;
+}
+
+.card-body-background {
+  background-color: #f39c12;
+}
+
+.card-footer-background {
+  background-color: #8e44ad;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    gap: 1em;
+    align-items: center;
+}
+
+.shift-btn {
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #1abc9c;
+    color: #ecf0f1;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.card-footer {
+  padding: 0.5em;
+  font-size: 15px;
+}
+
+.card-header h2 {
+  text-align: center;
+  padding: 0.5em;
+}
+
+.card-header .upload-btn {
+  display: block;
+  color: cadetblue;
+}
+
+.shift-btn:hover {
+    cursor: pointer;
+}
+
+.card-footer p span {
+  text-align: center;
+  font-style: italic;
+  color: #ecf0f1;
+}

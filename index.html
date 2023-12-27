@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase Shifter</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="app.js">
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="card-header-background">
+            <div class="card-header">
+                <h2>Upload sound file</h2>
+                <div class="sound-input">
+                    <input class="upload-btn" type="file" name="upload" id="upload-sound">
+                </div>
+                <input class="shift-btn" type="button" value="Flip Phase">
+            </div>
+        </div>
+        <hr>
+        <div class="card-body-background">
+            <div class="card-body">
+                <label for="input">Uploaded sound</label>
+                <audio controls muted>
+                    <source src="test.mp3" type="audio/mp3" name="input">
+                </audio>
+                <label for="output">Phase-shifted sound</label>
+                <audio controls muted>
+                    <source src="test.mp3" type="audio/mp3" name="output">
+                </audio>
+            </div>
+        </div>
+        <hr>
+        <div class="card-footer-background">
+            <div class="card-footer">
+                <p>Note: <span>Play both sounds simultaneously in order to hear them cancel each other out!</span></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
