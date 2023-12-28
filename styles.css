@@ -5,52 +5,55 @@ body {
   font: 16px/1.6 "Roboto Mono", monospace;
   width: 100vw;
   height: 100vh;
-  background-color: #27ae60;
+  background-color: #4A304D;
 }
 
 .card-header-background,
 .card-body-background,
 .card-footer-background {
   padding: 0.5em;
-  margin: 2em;
+  width: 90%;
   border-radius: 2em;
+  border: 5px solid #fa9c58;
+  background-color: #FFB37B;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   width: 40em;
+  align-items: center;
+  padding: 1.5em 0;
+  gap: 1.5em;
   margin: auto;
-  background-color: #2c3e50;
-  border-radius: 1em;
+  background-color: #B17179;
+  border-radius: 2em;
+  border: 5px solid rgb(179, 88, 88);
   box-shadow: 0px 16px 31px 2px rgba(0, 0, 0, 0.78);
 }
 
-.card-header-background {
-  background-color: #e74c3c;
-}
-
-.card-body-background {
-  background-color: #f39c12;
-}
-
-.card-footer-background {
-  background-color: #8e44ad;
-}
-
 .card-header {
-    display: flex;
-    flex-direction: column;
-    padding: 0.5em;
-    gap: 1em;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+  gap: 1em;
+  align-items: center;
 }
 
-.shift-btn {
-    padding: 1em;
-    border-radius: 1em;
-    background-color: #1abc9c;
-    color: #ecf0f1;
+.upload-btn {
+  padding-left: 4em;
+}
+
+.flip-btn,
+.play-both-btn,
+.upload-btn::file-selector-button {
+  padding: 0.5em 1em;
+  border-radius: 2em;
+  width: 8em;
+  background-color: #88588e;
+  color: #ecf0f1;
+  cursor: pointer;
+  border: 3px solid #813c8a;
 }
 
 .card-body {
@@ -71,17 +74,29 @@ body {
   padding: 0.5em;
 }
 
-.card-header .upload-btn {
-  display: block;
-  color: cadetblue;
-}
-
-.shift-btn:hover {
-    cursor: pointer;
+.card-body audio {
+  border: 3px solid rgb(201, 108, 214);
+  border-radius: 2em;
 }
 
 .card-footer p span {
   text-align: center;
   font-style: italic;
-  color: #ecf0f1;
+  color: #5f1169;
+}
+
+.flip-btn:hover,
+.play-both-btn:hover,
+.upload-btn::file-selector-button:hover {
+  background-color: #c681cf;
+  color: black;
+  border-color: #c657d4;
+}
+
+.upload-btn::file-selector-button {
+  margin-right: 1em;
+}
+
+.card-body audio::-webkit-media-controls-panel {
+  background-color: #cb99d2;
 }

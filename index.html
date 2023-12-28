@@ -7,7 +7,10 @@
     <title>Phase Shifter</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
-    <link href="app.js">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
 </head>
 
 <body>
@@ -17,32 +20,29 @@
             <div class="card-header">
                 <h2>Upload sound file</h2>
                 <div class="sound-input">
-                    <input class="upload-btn" type="file" name="upload" id="upload-sound">
+                    <input class="upload-btn" type="file" name="upload" accept="audio/*">
                 </div>
-                <input class="shift-btn" type="button" value="Flip Phase">
+                <input class="flip-btn" type="button" value="Flip Phase">
             </div>
         </div>
-        <hr>
         <div class="card-body-background">
             <div class="card-body">
-                <label for="input">Uploaded sound</label>
-                <audio controls muted>
-                    <source src="test.mp3" type="audio/mp3" name="input">
+                <span>Uploaded sound</span>
+                <audio id="input" controls>
                 </audio>
-                <label for="output">Phase-shifted sound</label>
-                <audio controls muted>
-                    <source src="test.mp3" type="audio/mp3" name="output">
+                <span>Phase-shifted sound</span>
+                <audio id="output" controls>
                 </audio>
+                <input class="play-both-btn" type="button" value="Play both">
             </div>
         </div>
-        <hr>
         <div class="card-footer-background">
             <div class="card-footer">
                 <p>Note: <span>Play both sounds simultaneously in order to hear them cancel each other out!</span></p>
             </div>
         </div>
     </div>
-
+    <script src="app.js"></script>
 </body>
 
 </html>
